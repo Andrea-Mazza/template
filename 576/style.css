@@ -23,6 +23,7 @@ h2 {
 
 /* HEADER */
 header {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
@@ -30,6 +31,18 @@ header {
     background-color: #ffffff;
     padding-left: 4.063em;
     padding-right: 4.063em;
+    width: 100%;
+}
+
+/* This class will be added by Js when user scroolls */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky+.content {
+    padding-top: 102px;
 }
 
 header img {
@@ -49,6 +62,7 @@ header nav {
     display: grid;
     align-items: center;
     font-size: 14px;
+    font-weight: lighter;
     color: #ffffff;
 }
 
@@ -56,24 +70,30 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    min-height: 100%;
+    height: 100%;
 }
 
 nav li {
     display: grid;
-    align-self: center;
-    min-height: 100%;
+    align-items: center;
+    height: 100%;
 }
 
 .dropdown {
     position: relative;
 }
 
+.dropbtn {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 25px;
-    background-color: #ffffff;
+    top: 55px;
+    background-color: #ffffffeb;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -86,7 +106,27 @@ nav li {
 }
 
 .dropdown-content a:hover {
-    color: #4ABDF8;
+
+    background-color: rgb(255, 255, 255);
+    animation: hovering 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hovering {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0);
+        color: #4ABDF8;
+    }
+
+    100% {
+        transform: scaleX(1);
+        color: #4ABDF8;
+    }
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,6 +157,7 @@ nav li {
 .sign-btn:hover {
     background-color: #4ABDF8;
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* END OF HEADER */
@@ -128,7 +169,7 @@ nav li {
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -152,8 +193,46 @@ nav li {
     padding: 30px 0px;
 }
 
-.first span {
+.container span {
     color: #4ABDF8;
 }
 
-/* FIRST SECTION */
+.btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group a {
+    margin: 20px;
+}
+
+.btn-group .btn-Icon {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    place-items: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.btn-Icon:hover {
+    color: #4ABDF8;
+    transition: all 0.3s ease;
+}
+
+.btn-group .btn-bordered {
+    display: grid;
+    place-items: center;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.btn-bordered:hover {
+    background-color: #ffffff;
+    color: #4ABDF8;
+    transition: all 0.3s ease;
+}
+
+/* END OF FIRST SECTION */
