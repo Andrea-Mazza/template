@@ -1,0 +1,425 @@
+/*
+    TABLE OF CONTENTS
+    1. HEADER
+    2. SECTION 1
+    3. SECTION 2
+    4. SECTION 3
+    5. SECTION 4
+    6. SECTION 5
+    7. SECTION 6
+    8. SECTION 7
+    9. FOOTER
+*/
+
+/*
+    1. HEADER
+*/
+@media screen and (max-width: 768px) {
+    #menu-lg {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .btn-header {
+        display: none;
+    }
+
+    #mobile-header .mobile-container .nav-mobile .btn-header-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*
+    HEADER END
+*/
+
+/*
+    2. SECTION 1
+*/
+@media screen and (max-width: 768px) {
+    #section_1 .container {
+        padding: 170px 0;
+    }
+
+    #section_1 .container .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #section_1 .container .content .text {
+        width: 100%;
+        align-items: center;
+    }
+
+    #section_1 .container .content .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_1 .container .content .text h2 {
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+}
+
+/*
+    SECTION 1 END
+*/
+
+/*
+    3. SECTION 2
+*/
+@media screen and (max-width: 768px) {
+    #section_2 .container .content {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    #section_2 .container .content .image-wrapper,
+    #section_2 .container .content .text-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_2 .container {
+        padding: 120px 20px;
+    }
+
+    #section_2 .container .content .text-wrapper .heading {
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    #section_2 .container .content .text-wrapper .heading {
+        flex-direction: column-reverse;
+    }
+}
+
+/*
+    SECTION 2 END
+*/
+
+/*
+    4. SECTION 3
+*/
+@media screen and (max-width: 768px) {
+    #section_3 .container .content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+    #section_3 .container .content .table,
+    #section_3 .container .content .numbers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_3 .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #section_3 .container .content .numbers strong {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #section_3 .container .content .larger {
+        padding: 0;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section_3 .container .content .numbers strong {
+        font-size: 35px;
+    }
+
+    #section_3 .container .content th,
+    #section_3 .container .content td {
+        padding: 10px 15px;
+    }
+}
+
+/*
+    SECTION 3 END
+*/
+
+/*
+    5. SECTION 4
+*/
+@media screen and (max-width: 768px) {
+    #section_4 .container .companies {
+        row-gap: 25px;
+    }
+
+    #section_4 .container .companies .image {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_4 .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #section_4 .container .companies .image {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section_4 .container .heading h3 {
+        text-align: center;
+    }
+
+    #section_4 .container .companies .image {
+        width: 100%;
+    }
+}
+
+/*
+    SECTION 4 END
+*/
+
+/*
+    6. SECTION 5
+*/
+@media screen and (max-width: 768px) {
+    #section_5 .container .content .services {
+        flex-direction: column;
+        row-gap: 24px;
+        column-gap: 0;
+    }
+
+    #section_5 .container .content .services .col-1,
+    #section_5 .container .content .services .col-2 {
+        width: 100%;
+    }
+
+    #section_5 .container .content .services .card .card-body .service-icon {
+        transform: rotate(-35deg) translateY(65px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_5 .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #section_5 .container .content .services .card .card-body .service-icon {
+        align-items: unset;
+        padding-top: 20px;
+        transform: rotate(-35deg) translateY(85px);
+    }
+
+    #section_5 .container .content .services .card .heading-card h3 {
+        font-size: 23px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    #section_5 .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #section_5 .container .content .services .card .card-body .service-icon .bi {
+        font-size: 70px;
+    }
+
+    #section_5 .container .content .services .card .card-body .service-icon {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/*
+    SECTION 5 END
+*/
+
+/*
+    7. SECTION 6
+*/
+@media screen and (max-width: 768px) {
+    #section_6 .container {
+        padding: 120px 60px;
+    }
+
+    #section_6 .container .content .heading {
+        width: 100%;
+    }
+
+    #section_6 .container .content .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+
+    #section_6 .container .content .project-list .card {
+        width: 48%;
+    }
+
+    #section_6 .container .content .project-list .card .project-info h3 {
+        font-size: 32px;
+    }
+
+    #section_6 .container .content .project-list .card .project-info small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_6 .container {
+        padding: 120px 20px;
+    }
+
+    #section_6 .container .content .project-list {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 48px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #section_6 .container .content .project-list .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section_6 .container .content .heading {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+/*
+    SECTION 6 END
+*/
+
+/*
+    8. SECTION 7
+*/
+@media screen and (max-width: 768px) {
+    #section_7 .container .content .heading {
+        width: 75%;
+    }
+
+    #section_7 .container .content .generality {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 48px;
+    }
+
+    #section_7 .container .content .generality .info,
+    #section_7 .container .content .generality .contact-form {
+        width: 100%;
+    }
+
+    #section_7 .container .content .generality .info {
+        background-color: transparent;
+        column-gap: 12px;
+    }
+
+    #section_7 .container .content .generality .info .cta,
+    #section_7 .container .content .generality .info .contact {
+        background-color: var(--white-color);
+    }
+
+    #section_7 .container .content .generality .info .cta {
+        border-right: unset;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #section_7 .container {
+        padding: 120px 20px;
+    }
+
+    #section_7 .container .content .heading {
+        width: 100%;
+    }
+
+    #section_7 .container .content .generality .info {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 24px;
+
+    }
+
+    #section_7 .container .content .generality .info .cta,
+    #section_7 .container .content .generality .info .contact {
+        width: 100%;
+    }
+
+    #section_7 .container .content .generality .contact-form .input-text-wrap {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 24px;
+    }
+
+    #section_7 .container .content .generality .contact-form .input-text-wrap .form-floating {
+        width: 100%;
+    }
+
+    #section_7 .container .content .generality .contact-form .input-check-wrap {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 10px;
+        row-gap: 24px;
+    }
+
+    #section_7 .container .content .generality .contact-form .input-check-wrap .checkbox-container {
+        width: 46%;
+    }
+}
+
+/*
+    SECTION 7 END
+*/
+
+/*
+    9. FOOTER
+*/
+@media screen and (max-width: 425px) {
+    footer .container .content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+    footer .container .content .copyright {
+        text-align: center;
+        border-right: unset;
+        padding-right: 0;
+        margin-right: 0;
+    }
+}
+
+/*
+    FOOTER END
+*/
