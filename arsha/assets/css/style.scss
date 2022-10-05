@@ -1,0 +1,108 @@
+/*
+    TABLE OF CONTENT
+    1. GLOBAL SETTINGS
+    2. HAMBURGER MENU
+    3. NAV
+*/
+
+/*
+    1. GLOBAL SETTINGS
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    position: relative;
+}
+
+/*
+    GLOBAL SETTINGS END
+*/
+
+/*
+    2. HAMBURGER MENU
+*/
+#mobile-menu {
+    display: none;
+    position: relative;
+    height: fit-content;
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+}
+
+#line-1 {
+    top: 14px;
+}
+
+#line-2 {
+    top: 20px;
+}
+
+#line-3 {
+    top: 26px;
+}
+
+.mobile-menu-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: scale(1, 0);
+}
+
+.mobile-menu-items ul {
+    display: flex;
+    position: absolute;
+    top: 56px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: blue;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    li {
+        padding: 10px 20px;
+    }
+}
+
+/*
+    HAMBURGER MENU END
+*/
+
+/*
+    3. NAV
+*/
+.navbar {
+    width: 90%;
+}
+
+.nav {
+    width: 100%;
+}
+
+/*
+    NAV END
+*/
