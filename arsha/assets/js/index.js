@@ -47,4 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         mobileBtn.classList.toggle('opened');
     })
+
+    const heroImg = document.getElementById('heroImg');
+
+    const heroImgAnimation = [
+        { transform: 'translateY(2%)' },
+        { transform: 'translateY(1%)' },
+        { transform: 'translateY(2%)' }
+    ];
+
+    const heroImgTiming = {
+        duration: 2000,
+        iterations: Infinity,
+        fill: 'both'
+    };
+
+    setInterval(zoomIn(), 1000);
+
+    function zoomIn() {
+        heroImg.animate(heroImgAnimation, heroImgTiming);
+    }
 })

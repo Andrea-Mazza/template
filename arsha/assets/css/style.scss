@@ -3,6 +3,7 @@
     1. GLOBAL SETTINGS
     2. HAMBURGER MENU
     3. NAV
+    4. HERO
 */
 
 /*
@@ -12,15 +13,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: unset;
     color: unset;
 }
 
 header {
     position: relative;
+    color: #ffffff;
+
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.btn-filled {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #47b2e4;
+}
+
+.btn-filled:hover {
+    background: #209dd8;
+    color: #ffffff;
+}
+
+.btn-group {
+    display: flex;
+    column-gap: 25px;
 }
 
 /*
@@ -44,7 +83,7 @@ header {
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: #ffffff;
 }
 
 #line-1 {
@@ -72,19 +111,22 @@ header {
 .mobile-menu-items ul {
     display: flex;
     position: absolute;
+    height: 50vh;
     top: 56px;
     right: 15px;
-    bottom: 15px;
     left: 15px;
     padding: 10px 0;
     border-radius: 10px;
-    background-color: blue;
+    background-color: #ffffff;
     list-style: none;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 
     li {
         padding: 10px 20px;
+        font-size: 15px;
+        color: #37517e;
     }
 }
 
@@ -101,8 +143,81 @@ header {
 
 .nav {
     width: 100%;
+
+    li {
+        padding: 10px 0 10px 30px;
+
+        a {
+            transition: all .5s ease;
+        }
+    }
+
+    .active,
+    a:hover,
+    a:focus {
+        color: #47b2e4
+    }
+}
+
+
+
+.nav li:last-child a,
+.mobile-menu-items ul li:last-child a {
+    border: 2px solid #47b2e4;
+    border-radius: 50px;
+    padding: 8px 15px;
 }
 
 /*
     NAV END
+*/
+
+/*
+    4. HERO
+*/
+#hero {
+    width: 100%;
+    height: 80vh;
+    background-color: #37517e;
+    padding-top: 72px;
+
+    h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+    }
+
+    h2 {
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+
+    i {
+        line-height: 0;
+        color: #fff;
+        font-size: 32px;
+        transition: 0.3s;
+        margin-right: 8px;
+    }
+
+    .btn-watch-video {
+        font-size: 16px;
+        color: #fff;
+        line-height: 1;
+    }
+
+    .btn-watch-video:hover i {
+        color: #47b2e4;
+    }
+
+    #heroImg {
+        transform: translateY(2%);
+    }
+}
+
+/*
+    HERO END
 */
