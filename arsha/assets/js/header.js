@@ -67,4 +67,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function zoomIn() {
         heroImg.animate(heroImgAnimation, heroImgTiming);
     }
+
+    const header = document.getElementById('header');
+    document.addEventListener('scroll', function () {
+        if (window.pageYOffset > 10) {
+            header.classList.add('header-bg');
+        } else {
+            header.classList.remove('header-bg');
+        }
+    });
 })

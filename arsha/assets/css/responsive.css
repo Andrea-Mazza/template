@@ -2,6 +2,11 @@
     TABLE OF CONTENT
     1. HMBURGER MENU
     2. HERO
+    3. ABOUT
+    4. CTA
+    5. TEAM
+    6. PRICING
+    7. PORTFOLIO
 */
 
 /*
@@ -22,12 +27,14 @@
 */
 @media screen and (max-width: 991.98px) {
     #hero {
-        height: 100vh;
+        height: 100%;
         text-align: center;
     }
-}
 
-@media screen and (max-width: 768px) {
+    #heroImg {
+        width: 50%;
+    }
+
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
@@ -38,7 +45,9 @@
         line-height: 24px;
         margin-bottom: 30px;
     }
+}
 
+@media screen and (max-width: 768px) {
     #hero img {
         width: 70%;
     }
@@ -74,4 +83,119 @@
 
 /*
     HERO END
+*/
+
+/*
+    3. ABOUT
+*/
+@media screen and (max-width: 767px) {
+
+    #about .row p,
+    #about .row ul li {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .skills h3,
+    .skills p {
+        text-align: center;
+    }
+}
+
+/*
+    ABOUT
+*/
+
+/*
+    4. CTA
+*/
+@media screen and (max-width: 991.98px) {
+    #cta {
+        text-align: center;
+    }
+
+    #cta .btn-container {
+        text-align: center;
+    }
+}
+
+/*
+    CTA END
+*/
+
+/*
+    5. TEAM
+*/
+@media screen and (max-width: 375px) {
+    #team .member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team .image,
+    #team .caption {
+        width: 100%;
+        text-align: center;
+    }
+
+    #team .image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #team .member .role::after {
+        left: 40%;
+    }
+
+    #team .member .social {
+        justify-content: center;
+    }
+}
+
+/*
+    TEAM END
+*/
+
+/*
+    6. PRICING
+*/
+@media screen and (max-width: 991.98px) {
+    #pricing .box {
+        max-width: 60%;
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+
+    #pricing .box ul li {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #pricing .box {
+        max-width: 100%;
+    }
+}
+
+/*
+    PRICING END
+*/
+
+/*
+    7. PORTFOLIO
+*/
+@media screen and (max-width: 767px) {
+    .categories-container .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+/*
+    PORTFOLIO END
 */
