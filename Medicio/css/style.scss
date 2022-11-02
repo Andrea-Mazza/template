@@ -1,0 +1,1150 @@
+/*
+    TABLE OF CONTENT
+    1. VARIABLE
+    2. REBOOT AND GENERAL SETTINGS
+    3. HEADER
+    4. HERO
+    5. FEATURED SERVICES
+    6. CTA
+    7. ABOUT
+    8. NUMBERS
+    9. FEATURES
+    10. SERVICES
+    11. APPOINTMENT
+    12. DEPARTMENTS
+    13. TESTIMONIALS
+    14. DOCTORS
+    15. PRICING
+    16. FAQ
+    17. CONTACT
+    18. FOOTER
+*/
+
+/*
+    1. VARIABLES
+*/
+$green: #3fbbc0;
+$sectionPadding: 60px 0;
+
+/*
+    VARIABLES END
+*/
+/*
+    2. REBOOT AND GENERAL SETTINGS
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.2px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+
+    h2 {
+        width: fit-content;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: $green;
+        left: calc(50% - 25px);
+    }
+}
+
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $green;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+/*
+    REBOOT AND GENERAL SETTINGS END
+*/
+
+/*
+    3. HEADER
+*/
+
+header {
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    img {
+        max-height: 50px;
+    }
+}
+
+nav {
+    background-color: #ffffff;
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #626262;
+        font-weight: 500;
+        margin-left: 30px;
+        width: fit-content;
+
+    }
+
+    .nav-btn {
+        background-color: $green;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .navbar-toggler,
+    .navbar-toggler:focus {
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+
+.line {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+#lineTop {
+    top: 10px;
+}
+
+#lineMiddle {
+    top: 20px;
+    width: 40px;
+}
+
+#lineBottom {
+    top: 30px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+/*
+    HEADER END
+*/
+
+/*
+    4. HERO
+*/
+#hero {
+    height: 100vh;
+    padding: 0;
+}
+
+.carousel-item,
+.carousel-inner img {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+}
+
+.first-slide {
+    background-image: url(../assets/img/slide/slide-1.jpg);
+}
+
+.second-slide {
+    background-image: url(../assets/img/slide/slide-2.jpg);
+}
+
+.third-slide {
+    background-image: url(../assets/img/slide/slide-3.jpg);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(63, 187, 192, 0.8);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    background-size: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-caption {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-top: 4px solid $green;
+
+    h2 {
+        color: #2f2f2f;
+    }
+
+    p {
+        color: #555555;
+    }
+}
+
+.hero-btn {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    background: $green;
+}
+
+/*
+    HERO END
+*/
+
+/*
+    5. FEATURED SERVICES
+*/
+#featured-services {
+    padding: $sectionPadding;
+
+    p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
+.card {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    .bi {
+        fill: $green;
+    }
+}
+
+.greenbox {
+    position: absolute;
+    z-index: 2;
+    background: $green;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+    border-radius: 8px;
+    border: none;
+}
+
+.card:hover .greenbox {
+    top: 0;
+}
+
+.card:hover {
+    color: #ffffff;
+}
+
+.card:hover .bi {
+    fill: #ffffff;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+    padding: 0;
+
+    h4 {
+        margin-top: 15px;
+    }
+}
+
+#thermometer {
+    transform: rotate(40deg);
+}
+
+/*
+    FEATURED SERVICES END
+*/
+
+/*
+    6. CTA
+*/
+#cta {
+    background-color: $green;
+    padding: $sectionPadding;
+
+    .container {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .cta-btn {
+        padding: 10px 35px;
+        border-radius: 25px;
+        transition: 0.5s;
+        border: 2px solid #fff;
+        width: fit-content;
+    }
+
+    .cta-btn:hover {
+        background-color: #ffffff;
+        color: $green;
+    }
+}
+
+/*
+    CTA END
+*/
+
+/*
+    7. ABOUT
+*/
+#about {
+    padding: $sectionPadding;
+
+    ul {
+        list-style: url(../assets/icons/check.svg);
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+}
+
+/*
+    ABOUT END
+*/
+
+/*
+    8. NUMBERS
+*/
+.count-box {
+    box-shadow: -10px -5px 40px 0 rgb(0 0 0 / 10%);
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .box-heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+
+    }
+
+    .bi {
+        fill: $green;
+    }
+
+    span {
+        font-size: 42px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #555555;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    a {
+        font-weight: 600;
+        color: #7b7b7b;
+        font-size: 15px;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+/*
+    NUMBERS END
+*/
+
+/*
+    9. FEATURES
+*/
+#features {
+    padding: $sectionPadding;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img {
+        width: 20%;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .bi {
+        fill: $green;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 15px;
+        color: #848484;
+    }
+}
+
+/*
+    FEATURES END
+*/
+
+/*
+    10. SERVICES
+*/
+#services {
+    padding: $sectionPadding;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        transition: 0.5s;
+        color: $green;
+        box-shadow: 0px 0 25px rgb(0 0 0 / 15%);
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 15px;
+        color: #444444;
+        transition: .3s;
+        cursor: pointer;
+        position: relative;
+    }
+
+    h4::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: $green;
+        left: calc(50% - 25px);
+    }
+
+    h4:hover {
+        color: $green;
+    }
+
+    p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
+
+.service-card:hover .icon {
+    box-shadow: 0px 0 25px $green;
+}
+
+/*
+    SERVICES END
+*/
+
+/*
+    11. APPOINTMENT
+*/
+#appointment {
+    padding: $sectionPadding;
+    background-color: #f7fcfc;
+
+    input,
+    textarea,
+    select {
+        display: block;
+        width: 100%;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        appearance: none;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    select {
+        background-image: url(../assets/icons/expand_more.png);
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 16px 12px;
+    }
+
+    textarea {
+        min-width: 40px;
+    }
+
+    button {
+        background: $green;
+        border: 0;
+        padding: 10px 35px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 50px;
+        width: fit-content;
+    }
+}
+
+/*
+    APPOINTMENT END
+*/
+
+/*
+    12. DEPARTMENTS
+*/
+#departments {
+    padding: $sectionPadding;
+
+    .nav-link {
+        width: 100%;
+        border: 0;
+        padding: 20px;
+        border-radius: 0;
+        border-left: 5px solid #ffffff;
+        cursor: pointer;
+        text-align: start;
+        color: #555555;
+
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    .nav-link.active {
+        background-color: #f7fcfc;
+        border-color: $green;
+
+        h4 {
+            color: $green;
+        }
+    }
+
+    .nav-link:hover h4 {
+        color: $green;
+    }
+
+    .tab-pane {
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: $green;
+        }
+
+        p {
+            color: #777777;
+        }
+
+        p:nth-child(1) {
+            font-style: italic;
+        }
+
+        img {
+            float: left;
+            max-width: 300px;
+            padding: 0 15px 15px 0;
+        }
+    }
+}
+
+/*
+    DEPARTMENTS END
+*/
+
+/*
+    13. TESTIMONIALS
+*/
+#testimonials {
+    padding: $sectionPadding;
+
+    .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        border: 1px solid $green;
+    }
+
+    .carousel-indicators button.active {
+        background-color: $green;
+    }
+
+    // .carousel-inner {
+    //     display: flex;
+    // }
+
+    // .carousel-item {
+    //     margin: 0;
+    //     display: flex;
+    //     flex: 0 0 calc(100%/3);
+    // }
+
+    .carousel-item {
+        height: fit-content;
+        padding: 60px 0 80px 0;
+    }
+
+    .testimonial-card {
+        min-height: 320px;
+        position: relative;
+        z-index: 1;
+
+        p {
+            font-style: italic;
+            margin: 0 15px 0 15px;
+            padding: 20px 20px 60px 20px;
+            background-color: #f0fafa;
+            border-radius: 6px;
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: -40px 0 0 40px;
+            border: 6px solid #fff;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px 45px;
+            color: #111;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: #999;
+            margin: 0 0 0 45px;
+        }
+    }
+}
+
+/*
+    TESTIMONIALS END
+*/
+
+/*
+    14. DOCTORS
+*/
+#doctors {
+    padding: $sectionPadding;
+
+    .member-card {
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 15px rgb(63 187 192 / 10%);
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #555555;
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #aaaaaa;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .social {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            opacity: 0;
+            transition: ease-in-out 0.3s;
+            background: rgba(255, 255, 255, 0.85);
+
+            .bi {
+                cursor: pointer;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+        }
+    }
+
+    .member-card:hover .social {
+        opacity: 1;
+    }
+
+
+}
+
+/*
+    DOCTORS END
+*/
+
+/*
+    15. PRICING
+*/
+#pricing {
+    padding: $sectionPadding;
+
+    .box {
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 12%);
+        background: #fff;
+        text-align: center;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+
+        .advanced {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            top: 20px;
+            right: -60px;
+            transform: rotate(45deg);
+            font-size: 14px;
+            padding: 1px 0 3px 0;
+            background: $green;
+            color: #fff;
+        }
+
+        h3 {
+            padding: 20px 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #777777;
+            background: #f8f8f8;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        .selected {
+            background: $green;
+            color: #fff;
+        }
+
+        h4 {
+            font-size: 36px;
+            color: $green;
+            font-weight: 600;
+
+            sup {
+                font-size: 20px;
+            }
+
+            span {
+                color: #bababa;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            color: #444444;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+
+            li {
+                padding-bottom: 16px;
+            }
+
+            .na {
+                color: #ccc;
+                text-decoration: line-through;
+            }
+        }
+
+        .btn-container {
+            padding: 20px 15px;
+            background-color: #f8f8f8;
+            text-align: center;
+
+            .btn-buy {
+                background-color: $green;
+                padding: 8px 35px 10px 35px;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+/*
+    PRICING END
+*/
+
+/*
+    16. FAQ
+*/
+#faq {
+    .accordion-item {
+        border-bottom: 1px solid #d9f1f2;
+        margin-bottom: 20px;
+    }
+
+    .accordion-button:focus {
+        border-color: transparent;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .accordion-button:not(.collapsed),
+    .accordion-button:hover {
+        color: $green;
+    }
+}
+
+/*
+    FAQ END
+*/
+
+/*
+    17.CONTACT
+*/
+#contact {
+    padding: $sectionPadding;
+
+    .info-box {
+        color: #444444;
+        text-align: center;
+        box-shadow: 0 0 20px rgb(214 215 216 / 50%);
+        padding: 20px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+            border-radius: 50%;
+            width: fit-content;
+            padding: 8px;
+            border: 2px dotted #5cebec;
+        }
+
+        .bi {
+            fill: $green;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #777777;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        p {
+            padding: 0;
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    form {
+        box-shadow: 0 0 20px rgb(214 215 216 / 50%);
+        padding: 30px;
+
+        input,
+        textarea {
+            border-radius: 4px;
+            box-shadow: none;
+            font-size: 14px;
+            width: 100%;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            appearance: none;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            padding: 10px 15px;
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: $green;
+                border: 0;
+                padding: 10px 30px;
+                color: #fff;
+                transition: 0.4s;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+/*
+    CONTACT END
+*/
+
+/*
+    18. FOOTER
+*/
+footer {
+    padding: $sectionPadding;
+    background: #eeeeee;
+    padding: 0 0 30px 0;
+    color: #555555;
+    font-size: 14px;
+
+    .footer-top {
+        background: #f6f6f6;
+        padding: 60px 0 30px 0;
+
+        h3 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 2px 0 2px 0;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .social {
+            a {
+                font-size: 18px;
+                display: inline-block;
+                background: $green;
+                color: #fff;
+                line-height: 1;
+                padding: 8px 0;
+                margin-right: 4px;
+                border-radius: 4px;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                transition: 0.3s;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            a {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+
+                .bi {
+                    padding-right: 6px;
+                    fill: #3fbbc0;
+                    font-size: 18px;
+                    line-height: 1;
+                }
+            }
+        }
+
+        form {
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+            border: 1px solid #d5d5d5;
+            border-radius: 4px;
+
+            input[type=email] {
+                border: 0;
+                padding: 4px;
+                width: calc(100% - 110px);
+            }
+
+            input[type=submit] {
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                border: 0;
+                background: none;
+                font-size: 16px;
+                padding: 0 20px;
+                background: #3fbbc0;
+                color: #fff;
+                transition: 0.3s;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: $sectionPadding;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+/*
+    FOOTER END
+*/
