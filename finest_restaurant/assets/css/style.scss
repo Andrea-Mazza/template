@@ -1,0 +1,54 @@
+/*
+    TABLE OF CONTENTS
+    1. VARIABLE AND GENERAL
+    2. HEADER
+*/
+
+
+/*
+    1. VARIABLE AND GENERAL
+*/
+body {
+    background-color: #000000;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+/*
+    VARIABLE AND GENERAL ENDS
+*/
+
+/*
+    2. HEADER
+*/
+header {
+    margin: 0;
+    padding: 0;
+
+    .navbar {
+        background-color: #161616;
+    }
+
+    .navbar-brand,
+    .navbar-brand:hover {
+        color: #f7f7f7;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .navbar-nav {
+        --bs-nav-link-color: rgb(247, 247, 247);
+        --bs-nav-link-hover-color: rgb(164, 164, 164);
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link {
+        color: rgb(247, 247, 247);
+    }
+
+
+}
+
+/*
+    HEADER END
+*/
