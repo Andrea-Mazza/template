@@ -2,6 +2,12 @@
     TABLE OF CONTENTS
     1. VARIABLE AND GENERAL
     2. HEADER
+    3. HERO HOME
+    4. PHOTO GALLERY HOME
+    5. SOCIAL HOME
+    6. VISIT US
+    7. MAP HOME
+    8. FOOTER
 */
 /*
     1. VARIABLE AND GENERAL
@@ -9,6 +15,50 @@
 body {
   background-color: #000000;
   font-family: "Gentium Book Basic", serif;
+  color: #f7f7f7;
+}
+
+.logo {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive, serif, system-ui;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.button {
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+  background-color: rgb(255, 255, 255);
+  border-radius: 48px;
+  padding: 20px;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.cancel-btn {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  text-decoration: underline;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.cancel-btn:hover {
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -20,6 +70,9 @@ body {
 header {
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 header .navbar {
   background-color: #161616;
@@ -31,17 +84,171 @@ header .navbar-brand:hover {
   font-weight: 700;
   font-family: "Oswald", sans-serif;
 }
-header .navbar-nav {
+header .navbar-expand-lg .navbar-nav {
   --bs-nav-link-color: rgb(247, 247, 247);
   --bs-nav-link-hover-color: rgb(164, 164, 164);
+  font-size: 0.9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+@media screen and (max-width: 991px) {
+  header .navbar-expand-lg .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header .navbar-nav .nav-link.active,
 header .navbar-nav .show > .nav-link {
   color: rgb(247, 247, 247);
 }
+header .dropdown-menu {
+  --bs-dropdown-link-color: rgb(247, 247, 247);
+  --bs-dropdown-bg: #161616;
+}
+header #menuBtn {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+header .line {
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  left: 10px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+}
+header #line1 {
+  top: 10px;
+}
+header #line2 {
+  top: 18px;
+}
+header #line3 {
+  top: 26px;
+}
+header .navbar-toggler:focus {
+  box-shadow: none;
+}
 
 /*
     HEADER END
+*/
+/*
+    3. HERO HOME
+*/
+.hero-home .row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+.hero-home img {
+  max-width: 200px;
+}
+
+/*
+    HERO HOME ENDS
+*/
+/*
+    4. PHOTO GALLERY HOME
+*/
+.photo-gallery-home .carousel {
+  margin-top: 50px;
+}
+
+/*
+    PHOTO GALLERY HOME ENDS
+*/
+/*
+    5. SOCIAL HOME
+*/
+.social-home .row > * {
+  width: fit-content;
+}
+.social-home .row {
+  justify-content: center;
+}
+.social-home .bi {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+/*
+    SOCIAL HOME END
+*/
+/*
+    6. VISIT US
+*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.contact p {
+  color: rgb(164, 164, 164);
+}
+.contact .card {
+  --bs-card-bg: transparent;
+}
+.contact .form-floating {
+  width: 100%;
+}
+.contact .form-control {
+  background-color: rgb(17, 17, 17);
+  border: 1px solid transparent;
+  color: rgb(164, 164, 164);
+}
+.contact .form-control label {
+  color: rgb(164, 164, 164);
+}
+
+/*
+    VISIT US END
+*/
+/*
+    7. MAP HOME
+*/
+.map-home {
+  width: 100vw;
+}
+
+/*
+    MAP HOME END
+*/
+/*
+    8. FOOTER
+*/
+footer {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161616;
+}
+footer .footer-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  font-weight: 200;
+}
+footer a {
+  color: rgb(247, 247, 247);
+}
+footer a:hover {
+  color: rgb(164, 164, 164);
+}
+footer hr {
+  background-color: rgb(164, 164, 164);
+  width: 50px;
+}
+
+/*
+    FOOTER END
 */
 
 /*# sourceMappingURL=style.css.map */
