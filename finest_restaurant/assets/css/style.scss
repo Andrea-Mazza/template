@@ -8,6 +8,7 @@
     6. VISIT US
     7. MAP HOME
     8. FOOTER
+    9. MENU PAGES
 */
 
 
@@ -16,7 +17,7 @@
 */
 body {
     background-color: #000000;
-    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Oswald', sans-serif;
     color: #f7f7f7;
 }
 
@@ -285,10 +286,83 @@ footer {
         background-color: rgb(164, 164, 164);
         width: 50px;
     }
-
-
 }
 
 /*
     FOOTER END
+*/
+
+/*
+    9. MENU PAGES
+*/
+.dish-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    h4 {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+}
+
+.dish-card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.dish-img {
+    max-width: 360px;
+    max-height: 240px;
+
+    img {
+        border-radius: 10px;
+        height: 240px;
+    }
+}
+
+.lunch-page {
+    hr {
+        background-color: rgb(164, 164, 164);
+
+    }
+}
+
+.lunch-heading {
+    padding-bottom: 24px;
+}
+
+.h3-bigger {
+    font-size: 1.90rem;
+    font-weight: 200;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: #919191;
+    padding-left: 0;
+    padding-bottom: 15px;
+
+    .heading {
+        color: #e2e2e2;
+        font-size: 22px;
+        font-weight: 200;
+        padding-bottom: 10px;
+    }
+
+    .price {
+        font-size: 22px;
+        font-weight: 200;
+    }
+}
+
+/*
+    MENU PAGES ENDS
 */
