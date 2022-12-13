@@ -3,6 +3,8 @@
     1. VARIABLES AND GENERAL
     2. HEADER
     3. HOME
+    4. FOOTER
+    5. MENU PAGES
 */
 /*
     1. VARIABLES AND GENERAL
@@ -20,6 +22,10 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+
+a:hover {
+  color: unset;
 }
 
 h1,
@@ -51,7 +57,8 @@ p {
   line-height: 1.4em;
 }
 
-section:not(.hero-slider) {
+section:not(.hero-slider),
+section:not(.menu-heading) {
   padding: 50px 0;
 }
 
@@ -113,7 +120,7 @@ hr {
 header {
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -162,6 +169,15 @@ header #line3 {
 header .navbar-toggler:focus {
   box-shadow: none;
 }
+header .dropdown-menu {
+  background-color: #ffffff;
+  --bs-nav-link-color: #000000;
+  --bs-nav-link-hover-color: #000000;
+}
+header .dropdown-item {
+  color: #000000;
+  font-weight: 200;
+}
 @media screen and (max-width: 991px) {
   header .navbar-collapse {
     background-color: #ab9371;
@@ -194,6 +210,14 @@ header .dropdown-menu li:not(:last-child) {
 .hero-slider {
   max-height: 100vh;
   overflow: hidden;
+}
+
+.card-body {
+  background-color: #ab9371;
+  color: #ffffff;
+}
+.card-body ul {
+  list-style: none;
 }
 
 .cta-home {
@@ -287,8 +311,96 @@ header .dropdown-menu li:not(:last-child) {
   color: #ffffff;
 }
 
+.max-img {
+  max-width: 400px;
+}
+
 /*
     HOME END
+*/
+/*
+    4. FOOTER
+*/
+footer {
+  padding: 50px 0;
+  background-color: #333;
+  color: #ffffff;
+}
+footer h2 {
+  color: #ffffff;
+}
+footer .bi {
+  color: #ffffff;
+}
+footer ul {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400 !important;
+  line-height: 16px;
+}
+footer ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer ul li .bi {
+  margin-right: 10px;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #777;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-nav li:not(:last-child) {
+  border-right: 1px solid #777;
+}
+footer .footer-nav li {
+  padding: 0 5px;
+}
+footer small {
+  color: #777;
+}
+
+/*
+    FOOTER END
+*/
+/*
+    5. MENU PAGES
+*/
+.menu-heading {
+  padding: 10px 0;
+}
+.menu-heading h1 {
+  color: #ffffff;
+}
+
+.breadcrumb-item,
+.breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #555555;
+  font-size: 16px;
+  font-weight: normal;
+}
+.menu-list h4,
+.menu-list h5 {
+  font-weight: 700;
+}
+.menu-list ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/*
+    MENU PAGES END
 */
 
 /*# sourceMappingURL=style.css.map */
