@@ -245,6 +245,7 @@ footer {
 footer .footer-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
   font-weight: 200;
