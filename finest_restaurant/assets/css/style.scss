@@ -9,6 +9,7 @@
     7. MAP HOME
     8. FOOTER
     9. MENU PAGES
+    10. ABOUT
 */
 
 
@@ -34,6 +35,10 @@ h2 {
     font-size: 3rem;
     font-family: 'Dancing Script', cursive, serif, system-ui;
     font-weight: 400;
+}
+
+p {
+    font-weight: 100;
 }
 
 a {
@@ -93,11 +98,12 @@ header {
     .navbar-expand-lg .navbar-nav {
         --bs-nav-link-color: rgb(247, 247, 247);
         --bs-nav-link-hover-color: rgb(164, 164, 164);
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: end;
+        font-weight: 100;
     }
 
     @media screen and (max-width: 991px) {
@@ -116,6 +122,11 @@ header {
     .dropdown-menu {
         --bs-dropdown-link-color: rgb(247, 247, 247);
         --bs-dropdown-bg: #161616;
+    }
+
+    .dropdown-item {
+        font-weight: 100;
+        font-size: 0.875rem;
     }
 
     #menuBtn {
@@ -265,6 +276,8 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #161616;
+    font-size: 0.875rem;
+    font-weight: 100;
 
     .footer-row {
         display: flex;
@@ -363,6 +376,44 @@ footer {
     }
 }
 
+.dinner-page {
+    .list-group {
+        width: 100%;
+    }
+}
+
 /*
     MENU PAGES ENDS
+*/
+
+/*
+    10. ABOUT
+*/
+.hero-about {
+    background-color: #161616;
+
+    h2 {
+        color: rgb(99, 99, 99);
+    }
+
+    p {
+        color: rgb(164, 164, 164);
+    }
+}
+
+.about-content {
+    h4 {
+        color: rgb(226, 226, 226);
+        font-size: 22px;
+        font-weight: 200;
+    }
+
+    p {
+        color: rgb(145, 145, 145);
+        line-height: 1.5;
+    }
+}
+
+/*
+    ABOUT END
 */
