@@ -5,6 +5,7 @@
     3. HOME
     4. FOOTER
     5. MENU PAGES
+    6. PRESS PAGE
 */
 /*
     1. VARIABLES AND GENERAL
@@ -66,6 +67,28 @@ hr {
   color: #DBDBDB;
 }
 
+.form-btn {
+  color: #ab9371;
+  background-color: #ffffff;
+  border: 1px solid #ab9371;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 22px;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  color: #ffffff;
+  background-color: #ab9371;
+}
+
+.bi-facebook:hover,
+.bi-instagram:hover {
+  cursor: pointer;
+}
+
 /*
     VARIABLES AND GENERAL
 */
@@ -103,6 +126,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -332,6 +356,10 @@ footer h2 {
 footer .bi {
   color: #ffffff;
 }
+footer .bi-facebook,
+footer .bi-instagram {
+  margin-right: 10px;
+}
 footer ul {
   list-style: none;
   font-size: 14px;
@@ -342,6 +370,7 @@ footer ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 10px;
 }
 footer ul li .bi {
   margin-right: 10px;
@@ -398,9 +427,94 @@ footer small {
   list-style: none;
   margin-bottom: 20px;
 }
+.menu-list a {
+  color: #ab9371;
+}
+.menu-list img {
+  max-width: 900px;
+}
+.menu-list p {
+  margin: 10px;
+}
 
 /*
     MENU PAGES END
+*/
+/*
+    6. PRESS PAGE
+*/
+.press-list .press-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.press-list p {
+  margin: 0px;
+}
+.press-list img {
+  max-width: 250px;
+  border-radius: 22px;
+}
+.press-list .press-btn {
+  background-color: #ffffff;
+  color: #ab9371;
+  border: 1px solid #ab9371;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+.press-list .press-btn:hover {
+  background-color: #ab9371;
+  color: #ffffff;
+}
+.press-list .txt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 10px;
+}
+.press-list .txt-container h5 {
+  font-weight: 700;
+}
+
+.press-content p {
+  margin: 20px 0;
+}
+
+aside {
+  padding: 50px 0;
+}
+aside h6 {
+  color: #ab9371;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+aside h5 {
+  font-weight: 700;
+}
+aside .press-btn {
+  background-color: #ffffff;
+  color: #ab9371;
+  border: 1px solid #ab9371;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+aside .press-btn:hover {
+  background-color: #ab9371;
+  color: #ffffff;
+}
+
+/*
+    PRESS PAGE
 */
 
 /*# sourceMappingURL=style.css.map */

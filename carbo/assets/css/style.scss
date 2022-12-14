@@ -5,6 +5,7 @@
     3. HOME
     4. FOOTER
     5. MENU PAGES
+    6. PRESS PAGE
 */
 
 /*
@@ -70,6 +71,28 @@ hr {
     color: #DBDBDB;
 }
 
+.form-btn {
+    color: #ab9371;
+    background-color: #ffffff;
+    border: 1px solid #ab9371;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 22px;
+    margin-top: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.form-btn:hover {
+    color: #ffffff;
+    background-color: #ab9371;
+}
+
+.bi-facebook:hover,
+.bi-instagram:hover {
+    cursor: pointer;
+}
+
 /*
     VARIABLES AND GENERAL
 */
@@ -113,6 +136,7 @@ hr {
         display: flex;
         flex-direction: row;
         justify-content: end;
+        align-items: center;
     }
 
 }
@@ -380,6 +404,12 @@ footer {
 
     .bi {
         color: #ffffff;
+
+    }
+
+    .bi-facebook,
+    .bi-instagram {
+        margin-right: 10px;
     }
 
     ul {
@@ -392,6 +422,7 @@ footer {
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 10px;
 
             .bi {
                 margin-right: 10px;
@@ -459,8 +490,112 @@ footer {
         list-style: none;
         margin-bottom: 20px;
     }
+
+    a {
+        color: #ab9371;
+    }
+
+    img {
+        max-width: 900px;
+    }
+
+    p {
+        margin: 10px;
+    }
 }
 
 /*
     MENU PAGES END
+*/
+
+/*
+    6. PRESS PAGE
+*/
+.press-list {
+
+    .press-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    img {
+        max-width: 250px;
+        border-radius: 22px;
+    }
+
+    .press-btn {
+        background-color: #ffffff;
+        color: #ab9371;
+        border: 1px solid #ab9371;
+        font-size: 12px;
+        padding: 10px 20px;
+        border-radius: 22px;
+        width: fit-content;
+        transition: all .3s ease-in-out;
+    }
+
+    .press-btn:hover {
+        background-color: #ab9371;
+        color: #ffffff;
+    }
+
+    .txt-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 10px;
+
+        h5 {
+            font-weight: 700;
+        }
+    }
+}
+
+.press-content {
+    p {
+        margin: 20px 0;
+    }
+}
+
+aside {
+    padding: 50px 0;
+
+    h6 {
+        color: #ab9371;
+        letter-spacing: .2px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-weight: 700;
+    }
+
+    .press-btn {
+        background-color: #ffffff;
+        color: #ab9371;
+        border: 1px solid #ab9371;
+        font-size: 12px;
+        padding: 10px 20px;
+        border-radius: 22px;
+        width: fit-content;
+        transition: all .3s ease-in-out;
+    }
+
+    .press-btn:hover {
+        background-color: #ab9371;
+        color: #ffffff;
+    }
+}
+
+/*
+    PRESS PAGE
 */
